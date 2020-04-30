@@ -15,8 +15,6 @@
         }
         .slide {
             padding-top: 51px;
-            background: #fff url(pictures/fcconf_bg.png) no-repeat;
-            background-size: cover;
         }
         .slide.clear {
             background-image: none;
@@ -35,25 +33,27 @@
 
     <header class="caption">
         <h1>Что происходит, когда я набираю "google.com" в адресной строке браузера и нажимаю "Enter"</h1>
-        <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://neuron.digital/">Neuron.Digital</a></p>
+        <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, AituTeam</p>
     </header>
 
     <section class="slide clear" id="cover">
         <h2>Что происходит, когда я набираю "google.com" в адресной строке браузера и нажимаю "Enter"</h2>
-        <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://neuron.digital/">Neuron.Digital</a></p>
+        <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, AituTeam</p>
         <figure>
-            <img class="cover h" src="pictures/fcconf_title.png" alt="FrontendConf Background">
+            <img class="cover w" src="pictures/type_on_notebook.jpg" alt="">
         </figure>
         <style>
             #cover h2 {
                 margin: 0;
                 color: #000;
                 font-size:60px;
+                text-shadow: 0 0 5px white;
             }
             #cover p {
                 margin: 10px 0 0;
                 color: #000;
                 font-size: 30px;
+                text-shadow: 0 0 5px white;
             }
             #cover p a {
                 color: #000;
@@ -61,12 +61,21 @@
         </style>
     </section>
 
-    <section class="slide clear">
-        <p style="font-size: 1.7em;">USB, Bluetooth, HID, IRQ, IDT, HSTS, Punycode, ASCII, DNS, UDP, SOA, ARP, MAC, IP, Socket, ISO/OSI, TCP, TLS, TTL, HTTP, Browser, URI, HTML, CSS, Rendering, CPU, GPU, DOM, ASCII</p>
+    <section class="slide">
+        <h2 class="shout">
+            <a href="https://clips.twitch.tv/KathishRenownedMetalKappaRoss">
+                Собеседование
+            </a>
+        </h2>
     </section>
+
+<!--     <section class="slide clear">
+        <p style="font-size: 1.7em;">USB, Bluetooth, HID, IRQ, IDT, HSTS, Punycode, ASCII, DNS, UDP, SOA, ARP, MAC, IP, Socket, ISO/OSI, TCP, TLS, TTL, HTTP, Browser, URI, HTML, CSS, Rendering, CPU, GPU, DOM, ASCII</p>
+    </section> -->
 
     <section class="slide">
         <h2>Итак, Вы решили зайти на google.com</h2>
+        <img class="place" src="pictures/google.png" alt="">
     </section>
 
     <section class="slide">
@@ -90,11 +99,19 @@
     </section>
 
     <section class="slide">
+        <img class="place" src="pictures/sensor-keyboard.jpg" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="place" src="pictures/keyboard-macbook.jpg" alt="">
+    </section>
+
+    <section class="slide">
         <img class="place" src="pictures/mechanic_keyboard.jpeg" alt="">
     </section>
 
     <section class="slide">
-        <h2 class="shout">Предложения</h2>
+        <h2 class="shout">Подсказки</h2>
     </section>
 
     <section class="slide">
@@ -121,8 +138,12 @@
         <h2 class="shout">HSTS</h2>
     </section>
 
-    <section class="slide">
-        <img class="place" src="pictures/HSTS.png" alt="">
+    <section class="slide clear">
+        <img class="cover h" src="pictures/hsts_1.png" alt="" style="height: 90%;">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/timing.png" alt="" style="height: 90%;">
     </section>
 
     <section class="slide">
@@ -130,7 +151,7 @@
     </section>
 
     <section class="slide">
-        <img class="place" src="pictures/dns101.jpg" alt="">
+        <img class="cover h" style="height: 90%;" src="pictures/dns-resolver.png" alt="">
     </section>
 
     <section class="slide">
@@ -138,15 +159,53 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout">Открываем socket</h2>
+        <h2 class="shout">Открываем<br>socket</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">TLS рукопожатие</h2>
+        <h2 class="shout">TLS<br>рукопожатие</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" style="height: 90%;" src="pictures/figure_4.png" alt="">
     </section>
 
     <section class="slide">
         <h2 class="shout">HTTP протокол</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Запрос</h2>
+
+        <pre>
+            <code>GET http://www.google.com/ HTTP/1.1</code>
+            <code>Accept: application/x-ms-application, image/jpeg, application/xaml+xml, [...]</code>
+            <code>User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; [...]</code>
+            <code>Accept-Encoding: gzip, deflate</code>
+            <code>Connection: Keep-Alive</code>
+            <code>Host: google.com</code>
+            <code>Cookie: datr=1265876274-[...]; locale=en_US; lsd=WW[...]; c_user=2101[...]</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Ответ</h2>
+
+        <pre style="font-size: 0.5em;">
+            <code><mark>HTTP/1.1 200 OK</mark></code>
+            <code>Cache-Control: private, no-store, no-cache, must-revalidate</code>
+            <code>Expires: Sat, 01 Jan 2000 00:00:00 GMT</code>
+            <code>P3P: CP="DSP LAW"</code>
+            <code>Pragma: no-cache</code>
+            <code><mark>Content-Encoding: gzip</mark></code>
+            <code>Content-Type: text/html; charset=utf-8</code>
+            <code>X-Conection: close</code>
+            <code>Transfer-Encoding: chunked</code>
+            <code>Date: Fri, 12 Feb 2010 09:05:55 GMT</code>
+            <code> </code>
+            <code><mark>2b3</mark></code>
+            <code><mark>��������T�n�@����[...]</mark></code>
+        </pre>
     </section>
 
     <section class="slide">
@@ -158,15 +217,63 @@
     </section>
 
     <section class="slide">
+        <img class="place" src="pictures/browser.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="place" src="pictures/browser-engines.png" alt="">
+    </section>
+
+    <section class="slide">
         <h2 class="shout">Парсинг HTML</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/rendering.png" alt="" style="height: 90%;">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" style="width: 90%;" src="pictures/parse-html.png" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" style="width: 90%;" src="pictures/tree-map.png" alt="">
     </section>
 
     <section class="slide">
         <h2 class="shout">Обработка CSS</h2>
     </section>
 
+    <section class="slide clear">
+        <img class="cover w" style="width: 90%;" src="pictures/cssom.jpg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>Специфичность</h2>
+
+        <pre style="font-size: 0.75em;">
+            <code>*               /* a=0 b=0 c=0 -> specificity =   0 */</code>
+            <code>LI              /* a=0 b=0 c=1 -> specificity =   1 */</code>
+            <code>UL LI           /* a=0 b=0 c=2 -> specificity =   2 */</code>
+            <code>UL OL+LI        /* a=0 b=0 c=3 -> specificity =   3 */</code>
+            <code>H1 + *[REL=up]  /* a=0 b=1 c=1 -> specificity =  11 */</code>
+            <code>UL OL LI.red    /* a=0 b=1 c=3 -> specificity =  13 */</code>
+            <code>LI.red.level    /* a=0 b=2 c=1 -> specificity =  21 */</code>
+            <code>#x34y           /* a=1 b=0 c=0 -> specificity = 100 */</code>
+            <code>#s12:not(FOO)   /* a=1 b=0 c=1 -> specificity = 101 */</code>
+        </pre>
+    </section>
+
     <section class="slide">
         <h2 class="shout">Рендеринг страницы</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" style="width: 90%;" src="pictures/webkit-flow.png" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" style="width: 90%;" src="pictures/frame-no-layout.jpg" alt="">
     </section>
 
     <section class="slide">
@@ -175,10 +282,6 @@
 
     <section class="slide">
         <img class="place" src="pictures/sight.jpg" alt="">
-    </section>
-
-    <section class="slide">
-        <img class="place" src="pictures/google.png" alt="">
     </section>
 
     <footer class="badge">
